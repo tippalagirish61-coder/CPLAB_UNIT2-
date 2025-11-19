@@ -1,0 +1,13 @@
+
+#include<stdio.h>
+int* display(int a[],int index)
+{
+    return &a[index];
+}
+int main()
+{
+    int arr[5]={50,10,40,30,20};
+    int*p =display(arr,3);
+    printf("%d",*p);
+    return 0;
+}
